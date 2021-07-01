@@ -161,7 +161,7 @@ void User::findResidentialAreaByTopKCells(int interval) {
  */
 #define movingSpeed 0.0125  // Human speed: 45 km per hour = 0.0125 km per second
 #define upscalingFactor 1.1 // Upscale the distance between two locations because the distance is an airline distance.
-#define minInterval 600     // seconds
+#define minInterval 1800     // seconds
 void User::findResidentialAreaBySpeed() {
   int mapID = 1;
   int low = 0, high = 0;

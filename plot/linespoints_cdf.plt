@@ -20,19 +20,19 @@ set size 0.45,0.6
 set xlabel "Center Distance (km)" offset 0,0.25
 set yrange[0:100]
 set ytics 0,10,100
-set ylabel "Cumulative Percentage of Points (%)" offset 2,-0.5
+set ylabel "Cumulative Percentage of Logs (%)" offset 2,-0.5
 
 set grid
 set linetype 1 lc rgb "midnight-blue" lw 2 pt 6 ps 1
 
 if(method eq 'average') {
-  set title "Average Latitude/Longitude, Area ".areaID offset 0,-0.8
+  set title "Average Latitude/Longitude" offset 0,-0.8
 }
 if(method eq 'gravity') {
-  set title "Center of Gravity, Area ".areaID offset 0,-0.8
+  set title "Center of Gravity" offset 0,-0.8
 }
 if(method eq 'mindist') {
-  set title "Center of Minimum Distance, Area ".areaID offset 0,-0.8
+  set title "Center of Minimum Distance" offset 0,-0.8
 }
 
 set datafile separator ","

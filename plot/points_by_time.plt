@@ -13,20 +13,20 @@ set encoding utf8
 set output outputfile
 set nokey 
 
-set size 0.6,0.4
+set size 1.2,0.4
 set xlabel "Time (hr)" offset 0,0.5
 set grid
 set linetype 1 lc rgb "midnight-blue" lw 2 pt 6 ps 1
 
 if(metric eq 'speed') {
-  set title "Time v.s. Speed" offset 0,-0.8
+  # set title "Time vs Speed" offset 0,-0.8
   set ylabel "Speed (1000 km/hr)" offset 1,-0.5
 }
 if(metric eq 'area') {
   set yrange[0:2.1]
   set ytics 0,1,2.1
-  set title "Time v.s. Residential Areas (By TopK Method)" offset 0,-0.8
-  set ylabel "Residential Areas (ID)" offset 1,-0.5
+  # set title "Time vs Residential Areas (By TopK Method)" offset 0,-0.8
+  set ylabel "Frequent Locations (ID)" offset 1,-0.5
 }
 
 set xdata time
